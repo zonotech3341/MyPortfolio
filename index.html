@@ -3,21 +3,27 @@
 
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>zonotech3341's Portfolio</title>
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
     <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="css/responsive.css">
   </head>
 
   <body>
 
     <header>
+
       <div class="header-left">
         <a href="#top">HOME</a>
         <p>zonotech3341's Portfolio</p>
       </div>
 
+      <i class="fas fa-bars menu-icon"></i>
+
       <nav class="header-right">
           <a href="#profile">Profile</a>
-          <a href="#application">Application</a>
+          <a href="#application">Apps</a>
           <a href="#article">Article</a>
           <a href="#contact">Contact</a>
       </nav>
@@ -32,52 +38,62 @@
         </div>  
 
         <div class="profiles">
-          
-          <div class="profile-icon">
-            <!-- <img src="img/bioremamagao_320.png" alt="My Icon"> -->
-            <div style="width: 280px; height: 280px; background: black;"></div>
+
+          <div class="profile">
+            <div class="profile-box profile-icon">
+                <img src="img/bioremamagao_320.png" alt="My Icon">
+                <!-- <div style="width: 280px; height: 280px; background: black;"></div> -->
+            </div>
           </div>
-    
-          <div class="profile-introduce">
-            <h1>zonotech3341</h1>
-            <p>I recently started programming.</p>
-            <p>I have studied HTML, CSS, and JavaScript!</p>
-            <div class="sns-accounts">
-              <a class="github btn" href="https://github.com/zonotech3341" target="_blank">GitHub Account</a>
-              <a class="qiita btn" href="https://qiita.com/zonotech3341" target="_blank">Qiita Account</a>
-              <a class="twitter btn" href="#" target="_blank">Twitter Account</a>
+
+          <div class="profile">
+            <div class="profile-box profile-introduce">
+                <h1>zonotech3341</h1>
+                <p>I recently started programming.</p>
+                <p>I have studied HTML, CSS, and JavaScript!</p>
+                <div class="sns-accounts">
+                  <a class="github btn" href="https://github.com/zonotech3341" target="_blank">GitHub Account</a>
+                  <a class="qiita btn" href="https://qiita.com/zonotech3341" target="_blank">Qiita Account</a>
+                  <a class="twitter btn" href="#" target="_blank">Twitter Account</a>
+                </div>
             </div>
           </div>
     
-          <div class="profile-list profile-hobby">
-            <h1>My Favorites</h1>
-            <ul>
-              <dt>Music</dt>
-              <dd>I’m crazy about... <strong>King Gnu</strong></dd>
-              <dt>Video Game</dt>
-              <dd>I’m addicted to... <strong>Splatoon2</strong><dd>
-              <dt>Animation</dt>
-              <dd>I’m hooked on... <strong>PHYCHO-PASS 3</strong></dd>
-            </dl>
+          <div class="profile">
+            <div class="profile-box profile-hobby">
+              <div class="profile-list">
+                <h1>My Favorites</h1>
+                <ul>
+                  <dt>Music</dt>
+                  <dd>I’m crazy about... <strong>King Gnu</strong></dd>
+                  <dt>Video Game</dt>
+                  <dd>I’m addicted to... <strong>Splatoon2</strong><dd>
+                  <dt>Animation</dt>
+                  <dd>I’m hooked on... <strong>PHYCHO-PASS 3</strong></dd>
+                </dl>
+              </div>
+            </div>
           </div>
 
-          <div class="profile-list profile-skill">
-            <h1>Skills</h1>
-            <ul>
-              <dt>Front-end</dt>
-              <dd>HTML, CSS, JavaScript</dd>
-              <dt>Back-end</dt>
-              <dd>Java, Ruby<dd>
-              <dt>Infra</dt>
-              <dd>Linux, Windows Server, AWS</dd>
-            </dl>
+          <div class="profile">
+            <div class="profile-box profile-skill">
+              <div class="profile-list">
+                <h1>Skills</h1>
+                <ul>
+                  <dt>Front-end</dt>
+                  <dd>HTML, CSS, JavaScript</dd>
+                  <dt>Back-end</dt>
+                  <dd>Java, Ruby<dd>
+                  <dt>Infra</dt>
+                  <dd>Linux, Windows Server, AWS</dd>
+                </dl>
+              </div>
+            </div>
           </div>
 
         </div>
 
-
       </div>
-
 
     </div>
 
@@ -92,6 +108,7 @@
         </div>
 
         <div class="applications">
+
           <div class="app">
             <div class="app-icon">
               <a href="#">Aggregation of Splatoon1 data</a>
@@ -104,6 +121,20 @@
               <a href="#">詳細はコチラ</a>
             </div>
           </div>
+
+          <div class="app">
+            <div class="app-icon">
+              <a href="#">Aggregation of Splatoon2 data</a>
+              <img src="img/splatoon2.png" alt="Splatoon1 Image">
+            </div>  
+            <div class="app-comment">
+              <p>スプラトゥーン2の自動戦績集計アプリです。</p>
+              <p>手動による集計は不要。自動で結果を集計して戦績を表示します。</p>
+              <br>
+              <a href="#">詳細はコチラ</a>
+            </div>
+          </div>
+
           <div class="app">
             <div class="app-icon">
               <a href="#">Aggregation of Splatoon1 data</a>
@@ -116,25 +147,14 @@
               <a href="#">詳細はコチラ</a>
             </div>
           </div>
+
           <div class="app">
             <div class="app-icon">
-              <a href="#">Aggregation of Splatoon1 data</a>
-              <img src="img/splatoon1.jpg" alt="Splatoon1 Image">
+              <a href="#">Aggregation of Splatoon2 data</a>
+              <img src="img/splatoon2.png" alt="Splatoon1 Image">
             </div>  
             <div class="app-comment">
-              <p>スプラトゥーン1の自動戦績集計アプリです。</p>
-              <p>手動による集計は不要。自動で結果を集計して戦績を表示します。</p>
-              <br>
-              <a href="#">詳細はコチラ</a>
-            </div>
-          </div>
-          <div class="app">
-            <div class="app-icon">
-              <a href="#">Aggregation of Splatoon1 data</a>
-              <img src="img/splatoon1.jpg" alt="Splatoon1 Image">
-            </div>  
-            <div class="app-comment">
-              <p>スプラトゥーン1の自動戦績集計アプリです。</p>
+              <p>スプラトゥーン2の自動戦績集計アプリです。</p>
               <p>手動による集計は不要。自動で結果を集計して戦績を表示します。</p>
               <br>
               <a href="#">詳細はコチラ</a>
@@ -146,11 +166,6 @@
       </div>
 
     </div>
-
-
-
-
-
 
 
     <div class="article-wrapper" id="article">
@@ -207,7 +222,6 @@
     </div>
 
 
-
     <div class="contact-wrapper" id="contact">
 
       <div class="container">
@@ -218,7 +232,7 @@
 
         <div class="form-section">
           <div class="contact-comment">
-            <p>制作のご依頼・ご相談などは下記フォームよりお気軽にお問い合わせください。</p>
+            <p>制作のご依頼・ご相談などは下記フォームよりお問い合わせください。</p>
           </div>
           <form action="#" method="#">
             <dl>
