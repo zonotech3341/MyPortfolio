@@ -6,6 +6,10 @@ h1, h2, h3, h4, h5, h6, p, div {
   padding: 0;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 a {
   text-decoration: none;
 }
@@ -24,7 +28,7 @@ button {
 }
 
 .container {
-  width: 1170px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -41,6 +45,7 @@ header {
   position :fixed;
   top: 0;
   display: flex;
+  justify-content: space-between;
 }
 
 .header-left {
@@ -48,7 +53,7 @@ header {
 }
 
 .header-left a {
-  width: 90px;
+  width: 70px;
   line-height: 70px;
   text-align: center;
   font-size: 14px;
@@ -59,13 +64,23 @@ header {
 
 .header-left p {
   color: white;
-  font-size: 30px;
+  font-size: 19px;
   line-height: 70px;
   padding: 0 20px;
 }
 
 .header-left a:hover {
   background: rgb(43, 42, 42)
+}
+
+.menu-icon {
+  color: white;
+  font-size: 30px;
+  margin: auto 0;
+  line-height: 70px;
+  padding: 0 20px;
+  display: none;
+  border: solid 1px white;
 }
 
 .header-right {
@@ -88,25 +103,35 @@ header {
 .profile-wrapper {
   margin-top: 70px;
   background: rgb(239, 243, 236);
-  height: 620px;
+  padding-bottom: 140px;
 }
 
 .profiles {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.profile {
+  width: 25%;
+}
+
+.profile-box {
+  margin: 0 auto;
+  width: 290px;
+  height: 290px;
+  border-radius: 10px;
 }
 
 .profile-icon img {
-  box-sizing: border-box;
-  height: 280px;
-  width: 280px;
   border-radius: 10px;
   border: 7px solid rgb(61, 61, 61);
+  width: 290px;
+  height: 290px;
 }
 
 .profile-introduce {
-  height: 280px;
-  width: 280px;
+  background: rgb(227, 230, 225);
 }
 
 .profile-introduce h1 {
@@ -120,36 +145,30 @@ header {
 }
 
 .profile-hobby {
-  width: 280px;
-  height: 280px;
   background: rgb(105, 175, 189);
   color: rgb(31, 30, 30);
-  border-radius: 10px;
 }
 
 .profile-skill {
-  width: 280px;
-  height: 280px;
   background: rgb(56, 56, 56);
   color: rgb(105, 175, 189);
-  border-radius: 10px;
 }
 
 .profile-list h1 {
-  margin-top: 20px;
+  padding-top: 20px;
   text-align: center;
   font-size: 35px;
 }
 
 .profile-list dt {
-  margin-left: 25px;
   font-size: 22px;
   font-weight: bold;
-  margin-top: 20px;
+  margin: 20px 0 0 20px;
 }
 
 .profile-list dd {
   font-size: 15px;
+  margin-left: 30px;
 }
 
 .sns-accounts {
@@ -198,36 +217,37 @@ header {
 
 .app {
   width: 50%;
-  margin: 20px 0;
+  margin-bottom: 70px;
 }
 
 .app-icon {
-  padding-top: 20px;
   text-align: center;
 }
 
 .app-icon a {
   display: block;
   font-size: 34px;
+  margin: 20px 0;
 }
 
 .app-icon a:hover {
-  color: rgb(145, 94, 1);
   font-weight: bold;
-  text-decoration: none;  
 }
 
 .app-icon img {
-  margin-top: 15px;
   width: 500px;
   height: 280px;
 }
 
 .app-comment {
-  padding-bottom: 20px;
-  padding-left: 42px;
   width: 500px;
   font-size: 16px;
+  margin: 0 auto 20px;
+}
+
+.app-comment p {
+  display: inline-block;
+  text-align: left;
 }
 
 .article-wrapper {
@@ -235,7 +255,7 @@ header {
 }
 
 .articles {
-  width: 700px;
+  width: 600px;
   margin: 0 auto;
   padding-bottom: 100px;
 }
@@ -253,7 +273,6 @@ header {
 }
 
 article {
-  border: double;
   border: double rgb(131, 130, 130);
   margin-bottom: 60px;
 }
@@ -261,7 +280,7 @@ article {
 
 .contact-wrapper {
   background: rgb(234, 245, 243);
-  height: 700px;
+  padding-bottom: 50px;
 }
 
 .contact-comment {
@@ -327,5 +346,5 @@ footer {
 footer p {
   color: white;
   font-size: 16px;
-  padding: 20px 0;
+  padding: 20px 60px;
 }

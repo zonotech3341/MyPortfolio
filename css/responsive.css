@@ -1,0 +1,73 @@
+@media (max-width: 1200px) {
+  .profile-wrapper {
+    padding-bottom: 50px;
+  }
+
+  .profile {
+    width: 50%;
+    margin-bottom: 50px;
+  }
+
+  .app {
+    width: 100%;
+  }
+
+}
+
+@media (max-width: 670px) {
+  .header-right {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .profile {
+    width: 100%;
+  }
+
+  .app-icon a {
+    font-size: 28px;
+  }
+
+  .app-icon img {
+    width: 320px;
+    height: 200px;
+  }
+  
+  .app-comment {
+    width: 320px;
+    font-size: 14px;
+  }
+
+  .articles {
+    width: 320px;
+    font-size: 14px;
+  }
+
+  .form-section {
+    width: 320px;
+  }
+
+  .form-section dt {
+    margin: 0 auto;
+  }
+  
+  .form-section dd {
+    margin-left: 0px;
+  }
+
+  .form-item {
+    width: 200px;
+  }
+
+  .name-box, .email-box {
+    width: 200px;
+  }
+   
+  .message-box {
+    width: 200px;
+  }
+
+}
